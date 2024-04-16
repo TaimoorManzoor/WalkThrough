@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/darkblue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activites.Tailor.TailorProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkblue"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Create Your Profile"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightblue"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pickimageid"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/usericon" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:id="@+id/ednameid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Username"
+                        android:drawableStart="@drawable/baseline_person"
+                        android:textColor="@color/darkblue"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColorHint="@color/lightblue"
+                        android:background="@drawable/custom_input"
+                        android:padding="17dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:id="@+id/edphoneid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:padding="17dp"
+                        android:hint="Phone Number"
+                        android:textColor="@color/darkblue"
+                        android:drawableStart="@drawable/baseline_phone"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColorHint="@color/lightblue"
+                        android:background="@drawable/custom_input"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:id="@+id/edpriceid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Price"
+                        android:drawableStart="@drawable/baseline_price_check_24"
+                        android:textColor="@color/darkblue"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColorHint="@color/lightblue"
+                        android:background="@drawable/custom_input"
+                        android:inputType="number"
+                        android:padding="17dp" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="17dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:id="@+id/edaddressesid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Address"
+                        android:padding="17dp"
+                        android:drawableStart="@drawable/baseline_location_on_24"
+                        android:textColor="@color/darkblue"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColorHint="@color/lightblue"
+                        android:background="@drawable/custom_input"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="18dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="3dp">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@drawable/custom_input"
+                        android:padding="17dp"
+                        android:prompt="@string/spinner"
+                        android:textColor="@color/darkblue" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btncreateprofileid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="35dp"
+                    android:background="@drawable/buttonround"
+
+                    android:backgroundTint="@color/darkblue"
+                    android:text="Create Profile"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

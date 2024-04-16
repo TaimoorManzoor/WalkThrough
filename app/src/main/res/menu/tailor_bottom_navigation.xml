@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="Home" android:id="@+id/home" android:icon="@drawable/baseline_home"/>
+
+        <item android:title="Order" android:id="@+id/order" android:icon="@drawable/baseline_list"/>
+
+        <item android:title="Profile" android:id="@+id/profile" android:icon="@drawable/baseline_account_box_24"/>
+
+        <item android:title="Request" android:id="@+id/RequestOrder" android:icon="@drawable/cart_request"/>
+
+        <item android:title="Earning" android:id="@+id/bookedusermenuID" android:icon="@drawable/money_svgrepo_com"/>
+</menu>

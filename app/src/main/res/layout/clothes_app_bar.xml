@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_2sdp"
+        android:background="@color/darkblue">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:title="Adrian Fernandez"
+            app:titleTextColor="@color/white"
+            app:subtitle="Good Morning"
+            app:subtitleTextColor="@color/white"
+            android:id="@+id/clothestoolbar"/>
+        <include layout="@layout/clothes_content_app_bar_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</LinearLayout>

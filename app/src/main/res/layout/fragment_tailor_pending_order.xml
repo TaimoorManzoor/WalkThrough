@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cardtop"
+    android:orientation="vertical"
+    tools:context=".activites.TailorPendingOrderFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="true"
+        android:background="@drawable/search_shape"
+        android:queryHint="Search"
+        app:searchIcon="@drawable/baseline_search_24"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pendingorder_recyclerView"
+        android:layout_margin="@dimen/_10sdp"/>
+</LinearLayout>

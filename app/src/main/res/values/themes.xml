@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WalkThrough" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lightblue</item>
+        <item name="colorPrimaryVariant">@color/darkblue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/darkblue</item>
+        <item name="colorSecondaryVariant">@color/lightblue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="darkBlueButton">
+        <item name="android:background">@drawable/buttonround</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="WhiteButton">
+        <item name="android:background">@drawable/whiteroundbutton</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:drawableEnd">@drawable/baseline_arrow_forward</item>
+    </style>
+
+    <style name="customInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:background">@drawable/buttonround</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:drawablePadding">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:layout_marginRight">@dimen/_24sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_24sdp</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColorHint">@color/lightblue</item>
+    </style>
+
+    <style name="profiletextStyle">
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SimpleprofiletextStyle">
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="ThemeOverlay.WalkThrough.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WalkThrough" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+</resources>

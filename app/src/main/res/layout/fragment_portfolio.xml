@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardtop"
+    tools:context=".activites.PortfolioFragment"
+    >
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/complainbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/buttonround"
+        android:text="Complain"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hirebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonround"
+        android:text="Hire Me"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/complainbtn"
+        app:layout_constraintEnd_toEndOf="@+id/complainbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/complainbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/tailorimage"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/hirebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tailor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tailor name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="@+id/tailorimage"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/tailorimage"
+        app:layout_constraintTop_toBottomOf="@+id/tailorimage" />
+
+    <TextView
+        android:id="@+id/ordercount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="100"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toTopOf="@+id/order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/tailorimage"
+        app:layout_constraintTop_toTopOf="@+id/tailorimage" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toBottomOf="@+id/tailorimage"
+        app:layout_constraintEnd_toEndOf="@+id/ordercount"
+        app:layout_constraintStart_toStartOf="@+id/ordercount" />
+
+    <TextView
+        android:id="@+id/processcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tailorimage"
+        app:layout_constraintTop_toTopOf="@+id/tailorimage" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toTopOf="@+id/tailor_name"
+        app:layout_constraintEnd_toEndOf="@+id/processcount"
+        app:layout_constraintStart_toStartOf="@+id/processcount" />
+
+    <TextView
+        android:id="@+id/completecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toTopOf="@+id/complete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/tailorimage"
+        app:layout_constraintTop_toTopOf="@+id/tailorimage" />
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:textColor="@color/darkblue"
+        app:layout_constraintBottom_toTopOf="@+id/tailor_name"
+        app:layout_constraintEnd_toEndOf="@+id/completecount"
+        app:layout_constraintStart_toStartOf="@+id/completecount" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Address : "
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="@+id/tailor_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tailor_name"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name" />
+
+    <TextView
+        android:id="@+id/addressinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karachi, Sindh"
+        android:textColor="@color/darkblue"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/address"
+        app:layout_constraintStart_toEndOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Gender : "
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="@+id/tailor_name"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/tailor_name"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name" />
+
+    <TextView
+        android:id="@+id/genderinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="@color/darkblue"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/gender"
+        app:layout_constraintStart_toEndOf="@+id/gender"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="Status : "
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="@+id/tailor_name"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/tailor_name"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name" />
+
+    <TextView
+        android:id="@+id/statusinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:textColor="@color/darkblue"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/status"
+        app:layout_constraintStart_toEndOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/tailor_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/portfolio_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/tailorportfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tailor Portfolio"
+        android:textColor="@color/darkblue"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complainbtn" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
